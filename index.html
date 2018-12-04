@@ -68,8 +68,7 @@
 </div>
 
 <script>
-class ARKitImageDetectionExample extends XRExampleBase {
-        alert("Hallo 1");
+class ARKitImageDetectionExample extends XRExampleBase {        
         constructor(domElement){
             super(domElement, false, true, false, true)
             // A message at the bottom of the screen that shows whether a surface has been found
@@ -83,7 +82,6 @@ class ARKitImageDetectionExample extends XRExampleBase {
         }
         // Called during construction to allow the app to populate this.scene
         initializeScene(){
-            alert("Hallo 2");
             // Add a box at the scene origin
             let box = new THREE.Mesh(
                 new THREE.BoxBufferGeometry(0.1, 0.1, 0.1),
@@ -169,8 +167,6 @@ class ARKitImageDetectionExample extends XRExampleBase {
         }
         // Called once per frame, before render, to give the app a chance to update this.scene
         updateScene(frame){
-            alert("Hallo 3");
-        
             let hubsImageName = 'hubs'
             if (!this.listenerSetup) {
                 this.listenerSetup = true
